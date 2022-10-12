@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-form.component.css']
 })
 export class SearchFormComponent implements OnInit {
+  searchField!: string;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  
+  onSubmit() {
+    console.log(this.searchField);
   }
 
 }
