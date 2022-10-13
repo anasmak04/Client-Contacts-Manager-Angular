@@ -1,13 +1,13 @@
-.search-form {
-    padding-top: 20px;
-    padding-left: 0;
+.search {
+  margin: 5px;
 }
-    input {
-      width: 600px;
-      height: 20px;
-      font-size: 14px;
-    }
 
-    label {
-        font-size: 16px;
-      }
+mat-form-field {
+  width: 80%;
+  padding: 15px;
+}
+
+.search-form {
+  width: 100%;
+
+}

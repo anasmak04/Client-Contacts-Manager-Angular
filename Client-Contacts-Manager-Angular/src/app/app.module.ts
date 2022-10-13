@@ -6,6 +6,7 @@ import { AdminModuleModule } from './admin/admin-module/admin-module.module';
 import { ClientsModuleModule } from './clients/clients-module/clients-module.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomMaterialModule } from './custom-material/custom-material.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { AppComponent } from './app.component';
     CompanyModuleModule,
     AdminModuleModule,
     ClientsModuleModule,
-    
+    CustomMaterialModule
 
   ],
   providers: [],
