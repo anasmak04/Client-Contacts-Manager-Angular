@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule ,ReactiveFormsModule} from "@angular/forms";
-
-import { AppComponent } from './app.component';
-import { ClientFormComponent } from './clients/client-form/client-form.component';
-import { ClientPageComponent } from './clients/client-page/client-page.component';
-import { SearchFormComponent } from './search/search-form/search-form.component';
+import { CompanyModuleModule } from './company/company-module/company-module.module';
+import { AdminModuleModule } from './admin/admin-module/admin-module.module';
+import { ClientsModuleModule } from './clients/clients-module/clients-module.module';
 import { AppRoutingModule } from './app-routing.module';
-
+import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ClientFormComponent,
-    ClientPageComponent,
-    SearchFormComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CompanyModuleModule,
+    AdminModuleModule,
+    ClientsModuleModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
